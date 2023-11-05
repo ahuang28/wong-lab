@@ -3,6 +3,10 @@ export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {},
+    fontFamily: {
+      'inter': ["Inter", "sans-serif"],
+      'open-sans': ["Open Sans", "sans-serif"],
+    },
   },
   plugins: [],
 }

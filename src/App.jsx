@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className='bg-[#F8F3ED] w-screen h-screen py-6 px-[73px]'>
+      <div className='bg-[#F8F3ED] w-screen h-screen overflow-auto font-open-sans'>
         <Header />
         <MainPage />
       </div>
