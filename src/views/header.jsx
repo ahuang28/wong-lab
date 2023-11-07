@@ -7,6 +7,7 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
     NavigationMenuViewport,
+    navigationMenuTriggerStyle
   } from "../components/ui/navigation-menu"
    
 
@@ -40,14 +41,14 @@ function Header() {
                     </div>
                 </div>
                 <NavigationMenu>
-                    <NavigationMenuList className="flex flex-row gap-x-3">
+                    <NavigationMenuList>
                         {tabs.map((tab) => (
                             <NavigationMenuItem key={tab.id}>
-                                <NavigationMenuLink href="#">
-                                    <div>
+                                {/* <NavigationMenuLink href="#"> */}
+                                    <div className={`${navigationMenuTriggerStyle()} text-base px-3`}>
                                         {tab.text}
                                     </div>
-                                </NavigationMenuLink>
+                                {/* </NavigationMenuLink> */}
                             </NavigationMenuItem>
                         ))}
                     </NavigationMenuList>
