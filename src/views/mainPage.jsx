@@ -45,6 +45,20 @@ function MainPage() {
                 <div>
                     <div className="text-5xl font-bold">Projects</div>
                     <div className="h-2 w-12 bg-primary mt-2 mb-6"></div>
+                    <div>
+                        <div>
+                            <div>Role of extrasynaptic NMDA receptors and stress resilience</div>
+                            <div>Close to 30% NMDA receptors, which are important in synaptic plasticity and neuronal survival, are located outside synapses. We found that activating extrasynaptic NMDA receptors could enhance stress resilience. Using nanotechnology and genetic approaches to manipulate extrasynaptic NMDA receptor function, we will examine mechanisms underlying the pro-resilience effects of extrasynaptic NMDA receptors.</div>
+                        </div>
+                        <div>
+                            <div>Interneuron function and stress resilience</div>
+                            <div>The hyperactivity of the hippocampus has been associated with stress susceptibility. Using electrophysiology and in vivo calcium imaging techniques, we will test a hypothesis that hippocampal hyperactivity in stress susceptible animals is related to impaired interneuron function.</div>
+                        </div>
+                        <div>
+                            <div>Cannabidiol and hippocampal hyperactivity in Alzheimer’s disease</div>
+                            <div>A prodromal change in the hippocampus before amyloid deposition is an increase in neuronal excitability. Using a mouse model of amyloid deposition, we will examine the effect of cannabidiol, a non-psychoactive compound derived from Cannabis plants, on restoring normal hippocampal function.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="relative top-[-5rem]" id="Team"></div>
