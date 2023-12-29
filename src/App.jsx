@@ -4,17 +4,19 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './views/header'
 import MainPage from './views/mainPage'
+import {NextUIProvider} from "@nextui-org/react";
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <NextUIProvider>
       <div className='bg-[#F8F3ED] w-screen h-screen overflow-auto font-open-sans'>
-        <Header />
+        
         <MainPage />
       </div>
-    </>
+    </NextUIProvider>
   )
 }
 
