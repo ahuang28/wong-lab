@@ -4,6 +4,12 @@ import { Phone } from "lucide-react"
 import { Linkedin } from "lucide-react"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../components/ui/carousel"
 import { Card, CardContent } from "../components/ui/card"
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+  } from "../components/ui/accordion"
 
 function MainPage() {
     return (
@@ -37,8 +43,45 @@ function MainPage() {
                     <div className="text-secondary">aiawjdaowhrgoaiwrhga paragraph</div>
                 </div>
             </div>
-            <div className="h-[38rem] bg-blue-200 flex justify-center pt-16" id="Publications">
+            <div className="h-[38rem] bg-secondary flex flex-col items-center pt-16" id="Publications">
                 <div className="text-5xl font-bold">Publications</div>
+                <Accordion type="single" collapsible className="w-[60rem] mt-10">
+                    <AccordionItem value="item-1">
+                        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+                        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+                        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+                        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+                        Yes. It adheres to the WAI-ARIA design pattern.
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-2">
+                        <AccordionTrigger>Is it styled?</AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It comes with default styles that matches the other
+                        components&apos; aesthetic.
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-3">
+                        <AccordionTrigger>Is it animated?</AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It's animated by default, but you can disable it if you prefer.
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-3">
+                        <AccordionTrigger>Is it animated?</AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It's animated by default, but you can disable it if you prefer.
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-3">
+                        <AccordionTrigger>Is it animated?</AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It's animated by default, but you can disable it if you prefer.
+                        </AccordionContent>
+                    </AccordionItem>
+                </Accordion>
             </div>
             <div className="h-[39rem] bg-primary flex flex-col items-center pt-16 relative" id="News">
                 <div className="absolute top-0 left-0 w-0 h-0 
