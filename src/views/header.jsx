@@ -53,10 +53,10 @@ function Header() {
             ))}
         </div>
     </div> */}
-            <div className="top-0 absolute w-full z-40">
+            <div className="top-0 absolute w-full z-50">
                 <div className="w-auto bg-white rounded-2xl my-[24px] mx-[73px] px-6 flex flex-row justify-between py-7 drop-shadow-[0_2px_rgba(217,217,217,0.7)]">
                     <div className="flex flex-row gap-x-1">
-                        <img src="https://via.placeholder.com/150" alt="logo" className="w-6 h-6" />
+                        <img src="/src/assets/brain_logo.svg" alt="logo" className="w-6 h-6" />
                         <a href="#mainpage">
                             <div className="text-xl font-bold">
                                 Tak Pan Wong
