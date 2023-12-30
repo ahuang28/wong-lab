@@ -12,8 +12,7 @@ function App() {
 
   return (
     <NextUIProvider>
-      <div className='bg-[#F8F3ED] w-screen h-screen overflow-auto font-open-sans'>
-        
+      <div className='bg-[#F8F3ED] w-screen h-screen overflow-x-hidden font-open-sans'>
         <MainPage />
       </div>
     </NextUIProvider>
