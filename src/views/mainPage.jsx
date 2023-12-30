@@ -16,9 +16,6 @@ import {
     AccordionTrigger,
   } from "../components/ui/accordion"
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
-
-
 function MainPage() {
     return (
         <>
@@ -57,8 +54,8 @@ function MainPage() {
                     </div>
                     <div className="grid grid-cols-3 gap-14 mx-[10rem] my-10 z-40">
                         <Card className="relative h-[30rem]">
-                            <CardHeader className="flex relative justify-end p-0">
-                                <img src="/src/assets/background.jpg" alt="project image" className="absolute w-full h-[15rem] object-cover"/>
+                            <CardHeader className="flex relative justify-end p-0 h-[10rem]">
+                                <img src="/src/assets/background.jpg" alt="project image" className="absolute w-full h-full object-cover"/>
                                 <CardTitle className="text-secondary z-40">Role of extrasynaptic NMDA receptors and stress resilience</CardTitle>
                             </CardHeader>
                             <CardContent className="absolute bottom-0">
@@ -66,9 +63,13 @@ function MainPage() {
                             </CardContent>
                         </Card>
                         <Card className="relative h-[30rem]">
-                            <CardHeader>
-                                <CardTitle>Interneuron function and stress resilience</CardTitle>
+                            <CardHeader className="flex relative justify-end p-0 h-[10rem]">
+                                <img src="/src/assets/background.jpg" alt="project image" className="absolute w-full h-full object-cover"/>
+                                <CardTitle className="text-secondary z-40">Role of extrasynaptic NMDA receptors and stress resilience</CardTitle>
                             </CardHeader>
+                            {/* <CardHeader>
+                                <CardTitle>Interneuron function and stress resilience</CardTitle>
+                            </CardHeader> */}
                             <CardContent className="absolute bottom-0">
                                 The hyperactivity of the hippocampus has been associated with stress susceptibility. Using electrophysiology and in vivo calcium imaging techniques, we will test a hypothesis that hippocampal hyperactivity in stress susceptible animals is related to impaired interneuron function.
                             </CardContent>
