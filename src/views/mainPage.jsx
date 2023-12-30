@@ -3,13 +3,21 @@ import { Mail } from "lucide-react"
 import { Phone } from "lucide-react"
 import { Linkedin } from "lucide-react"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../components/ui/carousel"
-import { Card, CardContent } from "../components/ui/card"
+import { Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle } from "../components/ui/card"
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
   } from "../components/ui/accordion"
+
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
+
 
 function MainPage() {
     return (
@@ -42,22 +50,36 @@ function MainPage() {
             <div className="relative top-[-5rem]" id="Projects"></div>
             <div className="relative h-[43rem] bg-secondary flex flex-col items-center pt-16">
                 <img className="absolute w-2/5 right-[-10rem] bottom-[-10rem] z-10" src="/src/assets/chemistry.svg" />
-                <div>
-                    <div className="text-5xl font-bold">Projects</div>
-                    <div className="h-2 w-12 bg-primary mt-2 mb-6"></div>
+                <div className="flex flex-col items-center">
                     <div>
-                        <div>
-                            <div>Role of extrasynaptic NMDA receptors and stress resilience</div>
-                            <div>Close to 30% NMDA receptors, which are important in synaptic plasticity and neuronal survival, are located outside synapses. We found that activating extrasynaptic NMDA receptors could enhance stress resilience. Using nanotechnology and genetic approaches to manipulate extrasynaptic NMDA receptor function, we will examine mechanisms underlying the pro-resilience effects of extrasynaptic NMDA receptors.</div>
-                        </div>
-                        <div>
-                            <div>Interneuron function and stress resilience</div>
-                            <div>The hyperactivity of the hippocampus has been associated with stress susceptibility. Using electrophysiology and in vivo calcium imaging techniques, we will test a hypothesis that hippocampal hyperactivity in stress susceptible animals is related to impaired interneuron function.</div>
-                        </div>
-                        <div>
-                            <div>Cannabidiol and hippocampal hyperactivity in Alzheimer’s disease</div>
-                            <div>A prodromal change in the hippocampus before amyloid deposition is an increase in neuronal excitability. Using a mouse model of amyloid deposition, we will examine the effect of cannabidiol, a non-psychoactive compound derived from Cannabis plants, on restoring normal hippocampal function.</div>
-                        </div>
+                        <div className="text-5xl font-bold">Projects</div>
+                        <div className="h-2 w-12 bg-primary mt-2 mb-6"></div>
+                    </div>
+                    <div className="grid grid-cols-3 gap-14 mx-[10rem] my-10 z-40">
+                        <Card className="relative h-[30rem]">
+                            <CardHeader>
+                                <CardTitle>Role of extrasynaptic NMDA receptors and stress resilience</CardTitle>
+                            </CardHeader>
+                            <CardContent className="absolute bottom-0">
+                                Close to 30% NMDA receptors, which are important in synaptic plasticity and neuronal survival, are located outside synapses. We found that activating extrasynaptic NMDA receptors could enhance stress resilience. Using nanotechnology and genetic approaches to manipulate extrasynaptic NMDA receptor function, we will examine mechanisms underlying the pro-resilience effects of extrasynaptic NMDA receptors.
+                            </CardContent>
+                        </Card>
+                        <Card className="relative h-[30rem]">
+                            <CardHeader>
+                                <CardTitle>Interneuron function and stress resilience</CardTitle>
+                            </CardHeader>
+                            <CardContent className="absolute bottom-0">
+                                The hyperactivity of the hippocampus has been associated with stress susceptibility. Using electrophysiology and in vivo calcium imaging techniques, we will test a hypothesis that hippocampal hyperactivity in stress susceptible animals is related to impaired interneuron function.
+                            </CardContent>
+                        </Card>
+                        <Card className="relative h-[30rem]">
+                            <CardHeader>
+                                <CardTitle>Cannabidiol and hippocampal hyperactivity in Alzheimer’s disease</CardTitle>
+                            </CardHeader>
+                            <CardContent className="absolute bottom-0">
+                                A prodromal change in the hippocampus before amyloid deposition is an increase in neuronal excitability. Using a mouse model of amyloid deposition, we will examine the effect of cannabidiol, a non-psychoactive compound derived from Cannabis plants, on restoring normal hippocampal function.
+                            </CardContent>
+                        </Card>
                     </div>
                 </div>
             </div>
