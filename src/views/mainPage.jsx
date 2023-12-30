@@ -36,7 +36,7 @@ function MainPage() {
             </div>
             <div className="relative top-[-18.25rem]" id="About"></div>
             <div className="relative h-[29rem] bg-primary grid grid-cols-2">
-                <img className="absolute w-2/5 bottom-[-12rem] left-[-2rem] z-10" src="/src/assets/microscope.svg" />
+                <img className="absolute bottom-[-12rem] left-[-2rem] z-10" src="/src/assets/microscope.svg" />
                 <div className="relative z-40">
                     <img src="/src/assets/tp_mugshot.png" alt="logo" className="absolute w-[34rem] h-[34rem] bottom-0 right-0" />
                 </div>
@@ -48,7 +48,7 @@ function MainPage() {
             </div>
             <div className="relative top-[-5rem]" id="Projects"></div>
             <div className="relative h-[43rem] bg-secondary flex flex-col items-center pt-16">
-                <img className="absolute w-2/5 right-[-10rem] bottom-[-10rem] z-10" src="/src/assets/chemistry.svg" />
+                <img className="absolute right-[-10rem] bottom-[-10rem] z-10" src="/src/assets/chemistry.svg" />
                 <div className="flex flex-col items-center">
                     <div>
                         <div className="text-5xl font-bold">Projects</div>
