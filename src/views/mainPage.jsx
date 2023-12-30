@@ -88,7 +88,7 @@ function MainPage() {
             <div className="relative top-[-5rem]" id="Team"></div>
             <div className="h-[40rem] bg-secondary">
                 <div className="flex overflow-x-scroll no-scrollbar w-full pt-14">
-                    <div className="left-[20%] relative h-[36rem] flex flex-nowrap gap-[2rem] items-center justify-center">
+                    <div className="2xl:left-[30%] left-[20%] relative h-[36rem] flex flex-nowrap gap-[2rem] items-center justify-center">
                         <div className="w-[29rem] absolute left-[-15%] h-[36rem] bg-primary px-10 py-20 rounded-xl">
                             <div className="text-5xl text-secondary font-bold">Meet the<br></br>Team</div>
                             <div className="h-2 w-12 bg-accent mt-2 mb-6"></div>
@@ -236,10 +236,11 @@ function MainPage() {
                     </div>
                 </div>
             </div>
-            <div className="h-[4rem] bg-primary flex items-center gap-20 px-10">
+            <div className="h-[4rem] bg-primary flex items-center gap-20 px-10 relative">
                 <div className="text-secondary">Copyright @ 2023</div>
                 <div className="text-secondary">McGill University</div>
                 <div className="text-secondary">Douglas Hospital</div>
+                <div className="text-secondary absolute right-4">Created and Designed by Amy Huang and Brandon Wong</div>
             </div>
         
         </>
