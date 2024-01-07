@@ -1,22 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './views/header'
-import MainPage from './views/mainPage'
-import {NextUIProvider} from "@nextui-org/react";
-
+import { useState } from 'react';
+import './App.css';
+import MainPage from './views/mainPage';
+import { NextUIProvider } from '@nextui-org/react';
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0);
 
-  return (
-    <NextUIProvider>
-      <div className='bg-[#F8F3ED] w-screen h-screen overflow-x-hidden font-open-sans'>
-        <MainPage />
-      </div>
-    </NextUIProvider>
-  )
+    return (
+        <NextUIProvider>
+            <div className="h-screen w-screen overflow-x-hidden bg-[#F8F3ED] font-open-sans">
+                <MainPage />
+            </div>
+        </NextUIProvider>
+    );
 }
 
-export default App
+export default App;
