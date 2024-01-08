@@ -83,17 +83,17 @@ function MainPage() {
                     </div>
                 </div>
                 <div className="relative top-[-5rem]" id="projects"></div>
-                <div className="relative flex h-[40rem] w-full flex-col items-center bg-secondary pt-16">
+                <div className="relative flex  w-full flex-col items-center bg-secondary py-16">
                     <img
                         className="absolute bottom-[-10rem] right-[-10rem] z-10"
                         src="/src/assets/chemistry.svg"
                     />
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center w-full">
                         <div>
                             <div className="text-5xl font-bold">Projects</div>
                             <div className="mb-6 mt-2 h-2 w-12 bg-primary"></div>
                         </div>
-                        <div className="overscroll z-40 mx-[10rem] my-10 grid grid-cols-3 gap-14 overscroll-y-auto">
+                        <div className="overscroll w-full z-40 px-[5rem] my-10 grid grid-cols-3 gap-14 overscroll-y-auto">
                             {data.projects.map((project) => (
                                 <Card className="min-h-[20rem] w-full min-w-[20rem]">
                                     <CardHeader className="relative flex h-[10rem] flex-col justify-end rounded-t-lg p-3">
@@ -117,15 +117,16 @@ function MainPage() {
                     </div>
                 </div>
                 <div className="relative top-[-5rem]" id="team"></div>
-                <div className="h-[40rem] bg-secondary">
-                    <div className="no-scrollbar flex w-full overflow-x-scroll pt-14">
-                        <div className="relative left-[20%] flex h-[36rem] flex-nowrap items-center justify-center gap-[2rem] 2xl:left-[30%]">
-                            <div className="absolute left-[-15%] h-[36rem] w-[29rem] rounded-xl bg-primary px-10 py-20">
-                                <div className="text-5xl font-bold text-secondary">
-                                    Meet the<br></br>Team
-                                </div>
-                                <div className="mb-6 mt-2 h-2 w-12 bg-accent"></div>
-                            </div>
+                <div className="h-[40rem] bg-secondary stroke-black">
+                    <div className="absolute h-[36rem] w-[29rem] rounded-xl bg-primary px-10 py-20">
+                        <div className="text-5xl font-bold text-secondary">
+                            Meet the<br></br>Team
+                        </div>
+                        <div className="mb-6 mt-2 h-2 w-12 bg-accent"></div>
+                    </div>
+                    <div className="no-scrollbar flex w-full overflow-x-scroll pt-10">
+                        <div className="relative flex h-[36rem] flex-nowrap items-center justify-center gap-[2rem] 2xl:left-[30%]">
+            
                             {data.team.map((member) => (
                                 <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
                                     <img
