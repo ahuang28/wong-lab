@@ -5,7 +5,6 @@ import {
     NavigationMenuList,
 } from '../components/ui/navigation-menu';
 import data from '../data/data.json';
-import { Menu } from 'lucide-react';
 
 function Header() {
     const tabs = [
@@ -35,13 +34,13 @@ function Header() {
                     </div>
                     <NavigationMenu>
                         <NavigationMenuList className="flex flex-row gap-x-8">
-                            {data.tabs.map((tab) => (
+                            { data.tabs.map((tab) => (
                                 <NavigationMenuItem key={tab.id}>
                                     <NavigationMenuLink href={'#' + tab.link}>
                                         <div>{tab.title}</div>
                                     </NavigationMenuLink>
                                 </NavigationMenuItem>
-                            ))}
+                            )) }
                         </NavigationMenuList>
                     </NavigationMenu>
                 </div>
