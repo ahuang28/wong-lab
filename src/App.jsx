@@ -8,8 +8,11 @@ function App() {
 
     return (
         <NextUIProvider>
-            <div className="h-screen w-screen overflow-x-hidden bg-[#F8F3ED] font-open-sans">
+            <div className="hidden lg:block h-screen w-screen overflow-x-hidden bg-[#F8F3ED] font-open-sans">
                 <MainPage />
+            </div>
+            <div className='lg:hidden'>
+                Hello Wrodl
             </div>
         </NextUIProvider>
     );

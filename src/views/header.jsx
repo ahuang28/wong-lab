@@ -34,13 +34,13 @@ function Header() {
                     </div>
                     <NavigationMenu>
                         <NavigationMenuList className="flex flex-row gap-x-8">
-                            { data.tabs.map((tab) => (
+                            {data.tabs.map((tab) => (
                                 <NavigationMenuItem key={tab.id}>
                                     <NavigationMenuLink href={'#' + tab.link}>
                                         <div>{tab.title}</div>
                                     </NavigationMenuLink>
                                 </NavigationMenuItem>
-                            )) }
+                            ))}
                         </NavigationMenuList>
                     </NavigationMenu>
                 </div>

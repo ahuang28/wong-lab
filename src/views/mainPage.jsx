@@ -46,9 +46,9 @@ function MainPage() {
                             alt="logo"
                             className="h-20 w-20"
                         />
-                        <div className="text-2xl">{ data.header.subtitle }</div>
+                        <div className="text-2xl">{data.header.subtitle}</div>
                         <div className="text-8xl font-bold uppercase text-primary">
-                            { data.header.title }
+                            {data.header.title}
                         </div>
                     </div>
                     <div className="flex flex-col items-center justify-center">
@@ -74,16 +74,16 @@ function MainPage() {
                     </div>
                     <div className="ml-16 pt-14">
                         <div className="text-5xl font-bold text-secondary">
-                            { data.about.title }
+                            {data.about.title}
                         </div>
                         <div className="mb-8 mt-2 h-2 w-12 bg-accent"></div>
                         <div className="w-2/3 text-justify text-secondary">
-                            { data.about.content }
+                            {data.about.content}
                         </div>
                     </div>
                 </div>
                 <div className="relative top-[-5rem]" id="projects"></div>
-                <div className="relative flex w-full h-[50rem] flex-col items-center bg-secondary pt-16">
+                <div className="relative flex h-[40rem] w-full flex-col items-center bg-secondary pt-16">
                     <img
                         className="absolute bottom-[-10rem] right-[-10rem] z-10"
                         src="/src/assets/chemistry.svg"
@@ -93,25 +93,26 @@ function MainPage() {
                             <div className="text-5xl font-bold">Projects</div>
                             <div className="mb-6 mt-2 h-2 w-12 bg-primary"></div>
                         </div>
-                        <div className="z-40 mx-[10rem] my-10 grid grid-cols-3 gap-14 overscroll overscroll-y-auto">
-                            {
-                                data.projects.map((project) => (
-                                    <Card className="min-w-[20rem] w-full h-[32rem]">
-                                        <CardHeader className="relative rounded-t-lg flex flex-col justify-end h-1/3 p-3">
-                                            <img
-                                                src={ "/src/assets/" + project.background_img }
-                                                className="absolute h-full w-full top-0 left-0 rounded-t-lg object-cover z-0"
-                                            />
-                                            <CardTitle className="text-secondary z-10">
-                                                {project.title}
-                                            </CardTitle>
-                                        </CardHeader>
-                                        <CardContent className="p-2 px-4 pb-4 text-ellipsis">
-                                                {project.content}
-                                        </CardContent>
-                                    </Card>
-                                ))
-                            }
+                        <div className="overscroll z-40 mx-[10rem] my-10 grid grid-cols-3 gap-14 overscroll-y-auto">
+                            {data.projects.map((project) => (
+                                <Card className="min-h-[20rem] w-full min-w-[20rem]">
+                                    <CardHeader className="relative flex h-[10rem] flex-col justify-end rounded-t-lg p-3">
+                                        <img
+                                            src={
+                                                '/src/assets/' +
+                                                project.background_img
+                                            }
+                                            className="absolute left-0 top-0 z-0 h-full w-full rounded-t-lg object-cover"
+                                        />
+                                        <CardTitle className="z-10 text-secondary">
+                                            {project.title}
+                                        </CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="text-ellipsis px-4 py-4">
+                                        {project.content}
+                                    </CardContent>
+                                </Card>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -125,24 +126,22 @@ function MainPage() {
                                 </div>
                                 <div className="mb-6 mt-2 h-2 w-12 bg-accent"></div>
                             </div>
-                            {
-                                data.team.map((member) => (
-                                    <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
-                                        <img
-                                            src={ "/src/assets/" + member.img }
-                                            alt="person face"
-                                            className="h-full w-full rounded-xl object-cover"
-                                        />
-                                        <div className="absolute bottom-0 h-1/2 w-full rounded-b-xl bg-gradient-to-t from-black to-transparent"></div>
-                                        <div className="absolute bottom-6 left-4 text-secondary">
-                                            { member.name }
-                                        </div>
-                                        <div className="absolute bottom-2 left-4 text-sm text-secondary">
-                                            { member.role }
-                                        </div>
-                                    </Card>
-                                ))
-                            }
+                            {data.team.map((member) => (
+                                <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
+                                    <img
+                                        src={'/src/assets/' + member.img}
+                                        alt="person face"
+                                        className="h-full w-full rounded-xl object-cover"
+                                    />
+                                    <div className="absolute bottom-0 h-1/2 w-full rounded-b-xl bg-gradient-to-t from-black to-transparent"></div>
+                                    <div className="absolute bottom-6 left-4 text-secondary">
+                                        {member.name}
+                                    </div>
+                                    <div className="absolute bottom-2 left-4 text-sm text-secondary">
+                                        {member.role}
+                                    </div>
+                                </Card>
+                            ))}
                         </div>
                     </div>
                 </div>
