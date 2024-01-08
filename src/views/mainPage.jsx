@@ -97,8 +97,12 @@ function MainPage() {
                             {
                                 data.projects.map((project) => (
                                     <Card className="min-w-[20rem] w-full h-[32rem]">
-                                        <CardHeader className={`rounded-t-lg flex flex-col justify-end h-1/3 p-3 bg-[url('/src/assets/${project.background_img}')]`}>
-                                            <CardTitle className="text-secondary">
+                                        <CardHeader className="relative rounded-t-lg flex flex-col justify-end h-1/3 p-3">
+                                            <img
+                                                src={ "/src/assets/" + project.background_img }
+                                                className="absolute h-full w-full top-0 left-0 rounded-t-lg object-cover z-0"
+                                            />
+                                            <CardTitle className="text-secondary z-10">
                                                 {project.title}
                                             </CardTitle>
                                         </CardHeader>
