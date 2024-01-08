@@ -6,5 +6,98 @@
     "about": {
         "title": "About",
         "content": "Stress is the main risk factor of depression. However, many individuals are resilient to stress that protect them from developing depression. We are interested in understanding the biological mechanism of stress resilience. Using various in vitro (e.g., electrophysiology) and in vivo techniques (e.g., calcium imaging), we examine changes in brain functions at the levels of synapses, neurons, and network that are related to stress resilience."
+<<<<<<< Updated upstream
     }
 }
+=======
+    },
+    "projects": [
+        {
+            "title": "Role of extrasynaptic NMDA receptors in stress resilience",
+            "content": "Close to 30% NMDA receptors, which are important in synaptic plasticity and neuronal survival, are located outside synapses. We found that activating extrasynaptic NMDA receptors could enhance stress resilience. Using nanotechnology and genetic approaches to manipulate extrasynaptic NMDA receptor function, we will examine mechanisms underlying the pro-resilience effects of extrasynaptic NMDA receptors.",
+            "background_img": "background.jpg"
+        },
+        {
+            "title": "Interneuron function and stress resilience",
+            "content": "The hyperactivity of the hippocampus has been associated with stress susceptibility. Using electrophysiology and in vivo calcium imaging, techniques, we will test a hypothesis that hippocampal hyperactivity in stress susceptible animals is related to impaired interneuron function.",
+            "background_img": "background.jpg"
+        },
+        {
+            "title": "Cannabidiol and hippocampal hyperactivity in Alzheimer's disease",
+            "content": "A prodomal change in the hippocampus before amyloid deposition is an increase in neuronal excitability. Using a mouse model of amyloid deposition, we will examine the effect of cannabidiol, a non-psychoactive compound derived from Cannabis plants, on restoring normal hippocampal function.",
+            "background_img": "background.jpg"
+        }
+    ],
+    "team": [
+        {
+            "name": "Tak Pan Wong",
+            "role": "Professor",
+            "img": "background.jpg"
+        },
+        {
+            "name": "Tak Pan Wong",
+            "role": "Professor",
+            "img": "background.jpg"
+        },
+        {
+            "name": "Tak Pan Wong",
+            "role": "Professor",
+            "img": "background.jpg"
+        },
+        {
+            "name": "Tak Pan Wong",
+            "role": "Professor",
+            "img": "background.jpg"
+        },
+        {
+            "name": "Tak Pan Wong",
+            "role": "Professor",
+            "img": "background.jpg"
+        },
+        {
+            "name": "Tak Pan Wong",
+            "role": "Professor",
+            "img": "background.jpg"
+        },
+        {
+            "name": "Tak Pan Wong",
+            "role": "Professor",
+            "img": "background.jpg"
+        },
+        {
+            "name": "Tak Pan Wong",
+            "role": "Professor",
+            "img": "background.jpg"
+        },
+        {
+            "name": "Tak Pan Wong",
+            "role": "Professor",
+            "img": "background.jpg"
+        }
+    ],
+    "publications": [
+        {
+            "title": "The hippocampus in stress",
+            "content": "",
+            "link": ""
+        },
+        {
+            "title": "The hippocampus in stress",
+            "content": "",
+            "link": ""
+        },
+        {
+            "title": "The hippocampus in stress",
+            "content": "",
+            "link": ""
+        },
+        {
+            "title": "The hippocampus in stress",
+            "content": "",
+            "link": ""
+        }
+    ],
+    "news": [
+    ]
+}
+>>>>>>> Stashed changes
