@@ -6,16 +6,9 @@ import {
 } from '../components/ui/navigation-menu';
 import data from '../data/data.json';
 
-function Header() {
-    const tabs = [
-        { text: 'About', width: 46, id: 1 },
-        { text: 'Projects', width: 60, id: 2 },
-        { text: 'Team', width: 42, id: 3 },
-        { text: 'Publications', width: 91, id: 4 },
-        { text: 'News', width: 42, id: 5 },
-        { text: 'Contact', width: 58, id: 6 },
-    ];
+import { Menu } from 'lucide-react';
 
+function Header() {
     return (
         <>
             <div className="hidden lg:block absolute top-0 z-50 w-full">
