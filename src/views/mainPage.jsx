@@ -22,6 +22,7 @@ import {
     AccordionTrigger,
 } from '../components/ui/accordion';
 import data from '../data/data.json';
+import { Button } from '../components/ui/button';
 
 function MainPage() {
     return (
@@ -292,14 +293,26 @@ function MainPage() {
                                         {pub.title}
                                     </AccordionTrigger>
                                     <AccordionContent>
-                                        {pub.content}
+                                        <div className="text-gray-500">Published on {pub.date}</div>
+                                        <div className="font-bold">
+                                        {
+                                            pub.authors.map((author, index) => (
+                                                <span key={index}>
+                                                    {author}
+                                                    {index < pub.authors.length - 1 ? ', ' : ''}
+                                                </span>
+                                            ))
+                                        }
+                                        </div>
+                                        <div className="mt-2">{pub.content}</div>
+                                        <Button className="pl-0" variant="link" onClick={ () => window.open(pub.link) }>Learn more</Button>
                                     </AccordionContent>
                                 </AccordionItem>
                             ))
                         }
                     </Accordion>
                 </div>
-                <div className="relative top-[-5rem]" id="News"></div>
+                <div className="relative top-[-5rem]" id="news"></div>
                 <div className="relative flex h-[39rem] flex-col items-center bg-primary pt-16">
                     <img
                         className="absolute bottom-0 right-0 z-10"
@@ -318,10 +331,10 @@ function MainPage() {
                         <div className="mb-10 mt-2 h-2 w-12 bg-accent"></div>
                     </div>
                     {
-                        data.news.length > 0 ? (
+                        data.news.carousel.length > 0 ? (
                             <Carousel className="w-[43rem]">
                                 <CarouselContent>
-                                    { data.news.map((_, index) => (
+                                    { data.news.carousel.map((item, index) => (
                                         <CarouselItem key={index}>
                                             <div className="p-1">
                                                 <Card>
@@ -340,14 +353,14 @@ function MainPage() {
                             </Carousel>
                         ) : (
                             <div className="text-2xl font-bold text-secondary">
-                                No news yet
+                                { data.news.empty }
                             </div>
                         )
                     }
                 </div>
                 <div
                     className="relative grid h-[17rem] grid-cols-2 border-y border-secondary bg-primary"
-                    id="Contact"
+                    id="contact"
                 >
                     <img
                         className="absolute right-0 top-0 z-10"
@@ -367,55 +380,55 @@ function MainPage() {
                         <div className="flex items-center gap-5">
                             <a
                                 className="flex h-[3rem] w-[3rem] items-center justify-center rounded-full bg-secondary"
-                                href="mailto:takpan.wong@mcgill.ca"
+                                href={ data.contact.mail.link }
                             >
                                 <Mail className="h-5 w-5 stroke-primary" />
                             </a>
                             <a
                                 className="text-secondary"
-                                href="mailto:takpan.wong@mcgill.ca"
+                                href={ data.contact.mail.link }
                             >
-                                takpan.wong@mcgill.ca
+                                { data.contact.mail.content }
                             </a>
                         </div>
 
                         <div className="flex items-center gap-5">
                             <a
                                 className="flex h-[3rem] w-[3rem] items-center justify-center rounded-full bg-secondary"
-                                href="tel:+5147616131;2929"
+                                href={ data.contact.phone.link }
                             >
                                 <Phone className="h-5 w-5 stroke-primary" />
                             </a>
                             <a
                                 className="text-secondary"
-                                href="tel:+5147616131;2929"
+                                href={ data.contact.phone.link }
                             >
-                                514-761-6131 x2929
+                                { data.contact.phone.content }
                             </a>
                         </div>
 
                         <div className="flex items-center gap-5">
                             <a
                                 className="flex h-[3rem] w-[3rem] items-center justify-center rounded-full bg-secondary"
-                                href="https://www.linkedin.com/in/tak-pan-wong-06348a21/"
+                                href={ data.contact.linkedin.link }
                             >
                                 <Linkedin className="h-5 w-5 stroke-primary" />
                             </a>
                             <a
                                 className="text-secondary"
-                                href="https://www.linkedin.com/in/tak-pan-wong-06348a21/"
+                                href={ data.contact.linkedin.link }
                             >
-                                takpanwong
+                                { data.contact.linkedin.content }
                             </a>
                         </div>
                     </div>
                 </div>
                 <div className="relative flex h-[4rem] items-center gap-20 bg-primary px-10">
-                    <div className="text-secondary">Copyright @ 2023</div>
-                    <div className="text-secondary">McGill University</div>
-                    <div className="text-secondary">Douglas Hospital</div>
+                    <div className="text-secondary">{ data.footer.copyright }</div>
+                    <div className="text-secondary">{ data.footer.mcgill }</div>
+                    <div className="text-secondary">{ data.footer.douglas }</div>
                     <div className="absolute right-4 text-secondary">
-                        Created and Designed by Amy Huang and Brandon Wong
+                        { data.footer.design }
                     </div>
                 </div>
             </div>
