@@ -4,6 +4,7 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
 } from '../components/ui/navigation-menu';
+import data from '../data/data.json';
 
 function Header() {
     const tabs = [
@@ -25,7 +26,7 @@ function Header() {
                             alt="logo"
                             className="h-6 w-6"
                         />
-                        <a href="#mainpage">
+                        <a href="#home">
                             <div className="text-xl font-bold">
                                 Tak Pan Wong
                             </div>
@@ -33,13 +34,13 @@ function Header() {
                     </div>
                     <NavigationMenu>
                         <NavigationMenuList className="flex flex-row gap-x-8">
-                            {tabs.map((tab) => (
+                            { data.tabs.map((tab) => (
                                 <NavigationMenuItem key={tab.id}>
-                                    <NavigationMenuLink href={'#' + tab.text}>
-                                        <div>{tab.text}</div>
+                                    <NavigationMenuLink href={'#' + tab.link}>
+                                        <div>{tab.title}</div>
                                     </NavigationMenuLink>
                                 </NavigationMenuItem>
-                            ))}
+                            )) }
                         </NavigationMenuList>
                     </NavigationMenu>
                 </div>

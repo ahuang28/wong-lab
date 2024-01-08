@@ -30,7 +30,7 @@ function MainPage() {
                 <Header />
                 <div
                     className="relative flex h-[54rem] flex-col justify-evenly bg-secondary"
-                    id="mainpage"
+                    id="home"
                 >
                     <img
                         className="absolute left-0 top-0 z-10"
@@ -59,7 +59,7 @@ function MainPage() {
                         />
                     </div>
                 </div>
-                <div className="relative top-[-18.25rem]" id="About"></div>
+                <div className="relative top-[-18.25rem]" id="about"></div>
                 <div className="relative grid h-[29rem] grid-cols-2 bg-primary">
                     <img
                         className="absolute bottom-[-12rem] left-[-2rem] z-10"
@@ -82,8 +82,8 @@ function MainPage() {
                         </div>
                     </div>
                 </div>
-                <div className="relative top-[-5rem]" id="Projects"></div>
-                <div className="relative flex h-[43rem] flex-col items-center bg-secondary pt-16">
+                <div className="relative top-[-5rem]" id="projects"></div>
+                <div className="relative flex w-full h-[50rem] flex-col items-center bg-secondary pt-16">
                     <img
                         className="absolute bottom-[-10rem] right-[-10rem] z-10"
                         src="/src/assets/chemistry.svg"
@@ -93,81 +93,25 @@ function MainPage() {
                             <div className="text-5xl font-bold">Projects</div>
                             <div className="mb-6 mt-2 h-2 w-12 bg-primary"></div>
                         </div>
-                        <div className="z-40 mx-[10rem] my-10 grid grid-cols-3 gap-14">
-                            <Card className="flex h-[30rem] flex-col rounded-xl">
-                                <CardHeader className="relative overflow-hidden p-0">
-                                    <img
-                                        src="/src/assets/background.jpg"
-                                        alt="project image"
-                                        className="h-full w-full rounded-t-xl object-cover"
-                                    />
-                                    <CardTitle className="absolute bottom-2 z-40 m-2 text-secondary">
-                                        Role of extrasynaptic NMDA receptors and
-                                        stress resilience
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent className="mt-6">
-                                    Close to 30% NMDA receptors, which are
-                                    important in synaptic plasticity and
-                                    neuronal survival, are located outside
-                                    synapses. We found that activating
-                                    extrasynaptic NMDA receptors could enhance
-                                    stress resilience. Using nanotechnology and
-                                    genetic approaches to manipulate
-                                    extrasynaptic NMDA receptor function, we
-                                    will examine mechanisms underlying the
-                                    pro-resilience effects of extrasynaptic NMDA
-                                    receptors.
-                                </CardContent>
-                            </Card>
-                            <Card className="flex h-[30rem] flex-col rounded-xl">
-                                <CardHeader className="relative overflow-hidden p-0">
-                                    <img
-                                        src="/src/assets/background.jpg"
-                                        alt="project image"
-                                        className="h-full w-full rounded-t-xl object-cover"
-                                    />
-                                    <CardTitle className="absolute bottom-2 z-40 m-2 text-secondary">
-                                        Interneuron function and stress
-                                        resilience
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent className="mt-6">
-                                    The hyperactivity of the hippocampus has
-                                    been associated with stress susceptibility.
-                                    Using electrophysiology and in vivo calcium
-                                    imaging techniques, we will test a
-                                    hypothesis that hippocampal hyperactivity in
-                                    stress susceptible animals is related to
-                                    impaired interneuron function.
-                                </CardContent>
-                            </Card>
-                            <Card className="flex h-[30rem] flex-col rounded-xl">
-                                <CardHeader className="relative overflow-hidden p-0">
-                                    <img
-                                        src="/src/assets/background.jpg"
-                                        alt="project image"
-                                        className="h-full w-full rounded-t-xl object-cover"
-                                    />
-                                    <CardTitle className="absolute bottom-2 z-40 m-2 text-secondary">
-                                        Cannabidiol and hippocampal
-                                        hyperactivity in Alzheimer’s disease
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent className="mt-6">
-                                    A prodromal change in the hippocampus before
-                                    amyloid deposition is an increase in
-                                    neuronal excitability. Using a mouse model
-                                    of amyloid deposition, we will examine the
-                                    effect of cannabidiol, a non-psychoactive
-                                    compound derived from Cannabis plants, on
-                                    restoring normal hippocampal function.
-                                </CardContent>
-                            </Card>
+                        <div className="z-40 mx-[10rem] my-10 grid grid-cols-3 gap-14 overscroll overscroll-y-auto">
+                            {
+                                data.projects.map((project) => (
+                                    <Card className="min-w-[20rem] w-full h-[32rem]">
+                                        <CardHeader className={`rounded-t-lg flex flex-col justify-end h-1/3 p-3 bg-[url('/src/assets/${project.background_img}')]`}>
+                                            <CardTitle className="text-secondary">
+                                                {project.title}
+                                            </CardTitle>
+                                        </CardHeader>
+                                        <CardContent className="p-2 px-4 pb-4 text-ellipsis">
+                                                {project.content}
+                                        </CardContent>
+                                    </Card>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
-                <div className="relative top-[-5rem]" id="Team"></div>
+                <div className="relative top-[-5rem]" id="team"></div>
                 <div className="h-[40rem] bg-secondary">
                     <div className="no-scrollbar flex w-full overflow-x-scroll pt-14">
                         <div className="relative left-[20%] flex h-[36rem] flex-nowrap items-center justify-center gap-[2rem] 2xl:left-[30%]">
@@ -177,104 +121,24 @@ function MainPage() {
                                 </div>
                                 <div className="mb-6 mt-2 h-2 w-12 bg-accent"></div>
                             </div>
-                            <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
-                                <img
-                                    src="/src/assets/background.jpg"
-                                    alt="person face"
-                                    className="h-full w-full rounded-xl object-cover"
-                                />
-                                <div className="absolute bottom-0 h-1/2 w-full rounded-b-xl bg-gradient-to-t from-black to-transparent"></div>
-                                <div className="absolute bottom-6 left-4 text-secondary">
-                                    Lorem Ipsum
-                                </div>
-                                <div className="absolute bottom-2 left-4 text-sm text-secondary">
-                                    Role
-                                </div>
-                            </Card>
-                            <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
-                                <img
-                                    src="/src/assets/background.jpg"
-                                    alt="person face"
-                                    className="h-full w-full rounded-xl object-cover"
-                                />
-                                <div className="absolute bottom-0 h-1/2 w-full rounded-b-xl bg-gradient-to-t from-black to-transparent"></div>
-                                <div className="absolute bottom-6 left-4 text-secondary">
-                                    Lorem Ipsum
-                                </div>
-                                <div className="absolute bottom-2 left-4 text-sm text-secondary">
-                                    Role
-                                </div>
-                            </Card>
-                            <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
-                                <img
-                                    src="/src/assets/background.jpg"
-                                    alt="person face"
-                                    className="h-full w-full rounded-xl object-cover"
-                                />
-                                <div className="absolute bottom-0 h-1/2 w-full rounded-b-xl bg-gradient-to-t from-black to-transparent"></div>
-                                <div className="absolute bottom-6 left-4 text-secondary">
-                                    Lorem Ipsum
-                                </div>
-                                <div className="absolute bottom-2 left-4 text-sm text-secondary">
-                                    Role
-                                </div>
-                            </Card>
-                            <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
-                                <img
-                                    src="/src/assets/background.jpg"
-                                    alt="person face"
-                                    className="h-full w-full rounded-xl object-cover"
-                                />
-                                <div className="absolute bottom-0 h-1/2 w-full rounded-b-xl bg-gradient-to-t from-black to-transparent"></div>
-                                <div className="absolute bottom-6 left-4 text-secondary">
-                                    Lorem Ipsum
-                                </div>
-                                <div className="absolute bottom-2 left-4 text-sm text-secondary">
-                                    Role
-                                </div>
-                            </Card>
-                            <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
-                                <img
-                                    src="/src/assets/background.jpg"
-                                    alt="person face"
-                                    className="h-full w-full rounded-xl object-cover"
-                                />
-                                <div className="absolute bottom-0 h-1/2 w-full rounded-b-xl bg-gradient-to-t from-black to-transparent"></div>
-                                <div className="absolute bottom-6 left-4 text-secondary">
-                                    Lorem Ipsum
-                                </div>
-                                <div className="absolute bottom-2 left-4 text-sm text-secondary">
-                                    Role
-                                </div>
-                            </Card>
-                            <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
-                                <img
-                                    src="/src/assets/background.jpg"
-                                    alt="person face"
-                                    className="h-full w-full rounded-xl object-cover"
-                                />
-                                <div className="absolute bottom-0 h-1/2 w-full rounded-b-xl bg-gradient-to-t from-black to-transparent"></div>
-                                <div className="absolute bottom-6 left-4 text-secondary">
-                                    Lorem Ipsum
-                                </div>
-                                <div className="absolute bottom-2 left-4 text-sm text-secondary">
-                                    Role
-                                </div>
-                            </Card>
-                            <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
-                                <img
-                                    src="/src/assets/background.jpg"
-                                    alt="person face"
-                                    className="h-full w-full rounded-xl object-cover"
-                                />
-                                <div className="absolute bottom-0 h-1/2 w-full rounded-b-xl bg-gradient-to-t from-black to-transparent"></div>
-                                <div className="absolute bottom-6 left-4 text-secondary">
-                                    Lorem Ipsum
-                                </div>
-                                <div className="absolute bottom-2 left-4 text-sm text-secondary">
-                                    Role
-                                </div>
-                            </Card>
+                            {
+                                data.team.map((member) => (
+                                    <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
+                                        <img
+                                            src={ "/src/assets/" + member.img }
+                                            alt="person face"
+                                            className="h-full w-full rounded-xl object-cover"
+                                        />
+                                        <div className="absolute bottom-0 h-1/2 w-full rounded-b-xl bg-gradient-to-t from-black to-transparent"></div>
+                                        <div className="absolute bottom-6 left-4 text-secondary">
+                                            { member.name }
+                                        </div>
+                                        <div className="absolute bottom-2 left-4 text-sm text-secondary">
+                                            { member.role }
+                                        </div>
+                                    </Card>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
