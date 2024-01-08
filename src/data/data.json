@@ -99,26 +99,89 @@
     ],
     "publications": [
         {
-            "title": "The hippocampus in stress",
-            "content": "",
-            "link": ""
+            "title": "The hippocampus in stress susceptibility and resilience",
+            "content": "Understanding the individual variability that comes with the likelihood of developing stress-related psychopathologies is of paramount importance when addressing mechanisms of their neurobiology. This article focuses on the hippocampus as a region that...",
+            "date": "December 20, 2022",
+            "authors": [
+                "Amanda Larosa",
+                "Tak Pan Wong"
+            ],
+            "link": "https://pubmed.ncbi.nlm.nih.gov/35842073/"
         },
         {
-            "title": "The hippocampus in stress",
-            "content": "",
-            "link": ""
+            "title": "Negative Memory Engrams in the Hippocampus Enhance the Susceptibility to Chronic Social Defeat Stress",
+            "content": "The hippocampus has been highly implicated in depression symptoms. Recent findings suggest that the expression and susceptibility of depression symptoms are related to the enhanced functioning of the hippocampus. We reasoned that...",
+            "date": "September 18, 2019",
+            "authors": [
+                "Tian Rui Zhang",
+                "Amanda Larosa",
+                "Marie-Eve Di Raddo",
+                "Vanessa Wong",
+                "Alice S. Wong",
+                "Tak Pan Wong"
+            ],
+            "link": "https://www.jneurosci.org/content/39/38/7576?fbclid=IwAR2B-p5_Y-xYibCTxwa88rtwIL4qhIH-21_Rx1Fc3CwKUnuCetWQezx5a5Q"
         },
         {
-            "title": "The hippocampus in stress",
-            "content": "",
-            "link": ""
+            "title": "The susceptibility to chronic social defeat stress is related to low hippocampal extrasynaptic NMDA receptor function",
+            "content": "N-methyl-D-aspartate receptors (NMDARs) have been highly implicated in the pathogenesis and treatment of depression. While NMDARs can be found inside and outside glutamate synapses, it remains...",
+            "date": "January 25, 2019",
+            "authors": [
+                "Yiu Chung Tse",
+                "Joëlle Lopez",
+                "Alexandre Moquin",
+                "Shui-Ming Alice Wong",
+                "Dusica Maysinger",
+                "Tak Pan Wong"
+            ],
+            "link": "https://www.nature.com/articles/s41386-019-0325-8"
         },
         {
-            "title": "The hippocampus in stress",
-            "content": "",
-            "link": ""
+            "title": "Preventing synaptic deficits in Alzheimer’s disease by inhibiting tumor necrosis factor alpha signaling",
+            "content": "The characterization of preclinical stages of Alzheimer’s disease (AD) would provide a therapeutic window for prevention. One of the challenges of developing preventive therapy for AD is to identify early biomarkers for intervention studies. We have recently...",
+            "date": "June 2018",
+            "authors": [
+                "Chelsea Cavanagh",
+                "Tak Pan Wong"
+            ],
+            "link": "https://www.sciencedirect.com/science/article/pii/S2451830117300468"
+        },
+        {
+            "title": "Maternal Care Differentially Affects Neuronal Excitability and Synaptic Plasticity in the Dorsal and Ventral Hippocampus",
+            "content": "Variations in early life maternal care modulate hippocampal development to program distinct emotional–cognitive phenotypes that persist into adulthood. Adult rat offspring that received low compared with high levels of maternal licking and grooming (low LG offspring) in early...",
+            "date": "January 19, 2015",
+            "authors": [
+                "Huy-Binh Nguyen",
+                "Rosemary C Bagot",
+                "Josie Diorio",
+                "Tak Pan Wong",
+                "Michael J Meaney"
+            ],
+            "link": "https://www.nature.com/articles/npp201519"
         }
     ],
-    "news": [
-    ]
+    "news": {
+        "carousel": [],
+        "empty": "No news yet."
+    },
+    "contact": {
+        "mail": {
+            "content": "takpan.wong@mcgill.ca",
+            "link": "mailto:takpan.wong@mcgill.ca"
+        },
+        "phone": {
+            "content": "514-761-6131 x2929",
+            "link": "tel:514-761-6131 x2929"
+        },
+        "linkedin": {
+            "content": "takpanwong",
+            "link": "https://www.linkedin.com/in/tak-pan-wong-06348a21/"
+        }
+    },
+    "footer": {
+        "copyright": "Copyright @ 2023",
+        "mcgill": "McGill University",
+        "douglas": "Douglas Hospital",
+        "design": "Made by Amy Huang and Brandon Wong"
+    }
 }
