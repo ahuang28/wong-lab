@@ -96,5 +96,29 @@
             "role": "Professor",
             "img": "background.jpg"
         }
+    ],
+    "publications": [
+        {
+            "title": "The hippocampus in stress",
+            "content": "",
+            "link": ""
+        },
+        {
+            "title": "The hippocampus in stress",
+            "content": "",
+            "link": ""
+        },
+        {
+            "title": "The hippocampus in stress",
+            "content": "",
+            "link": ""
+        },
+        {
+            "title": "The hippocampus in stress",
+            "content": "",
+            "link": ""
+        }
+    ],
+    "news": [
     ]
 }
