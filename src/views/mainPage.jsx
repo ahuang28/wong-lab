@@ -95,8 +95,8 @@ function MainPage() {
                             <div className="mb-6 mt-2 h-2 w-12 bg-primary"></div>
                         </div>
                         <div className="overscroll w-full z-40 px-[5rem] my-10 grid grid-cols-3 gap-14 overscroll-y-auto">
-                            {data.projects.map((project) => (
-                                <Card className="min-h-[20rem] w-full min-w-[20rem]">
+                            {data.projects.map((project, index) => (
+                                <Card className="min-h-[20rem] w-full min-w-[20rem]" key={index}>
                                     <CardHeader className="relative flex h-[10rem] flex-col justify-end rounded-t-lg p-3">
                                         <img
                                             src={
@@ -127,8 +127,8 @@ function MainPage() {
                     </div>
                     <div className='no-scrollbar flex w-full overflow-x-scroll pt-10'>
                         <div className='relative flex h-[36rem] flex-nowrap items-center justify-center gap-[2rem]'>
-                            {data.team.map((member) => (
-                                <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
+                            {data.team.map((member, index) => (
+                                <Card className="relative h-[24em] w-[16em] rounded-xl border-none" key={index}>
                                     <img
                                         src={'/src/assets/' + member.img}
                                         alt="person face"
@@ -155,7 +155,7 @@ function MainPage() {
                     <Accordion type="single" collapsible className="w-[60rem]">
                         {
                             data.publications.map((pub, index) => (
-                                <AccordionItem value={'item-' + index}>
+                                <AccordionItem value={'item-' + index} key={index}>
                                     <AccordionTrigger>
                                         {pub.title}
                                     </AccordionTrigger>

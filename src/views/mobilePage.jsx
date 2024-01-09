@@ -90,8 +90,8 @@ function MobilePage() {
                             <div className="text-2xl font-bold">Projects</div>
                             <div className="mb-6 mt-2 h-2 w-12 bg-primary"></div>
                         </div>
-                        {data.projects.map((project) => (
-                                        <Card className="min-h-[20rem] w-full min-w-[20rem] mb-6">
+                        {data.projects.map((project, index) => (
+                                        <Card className="min-h-[20rem] w-full min-w-[20rem] mb-6" key={index}>
                                             <CardHeader className="relative flex h-[10rem] flex-col justify-end rounded-t-lg p-3">
                                                 <img
                                                     src={
@@ -109,33 +109,6 @@ function MobilePage() {
                                             </CardContent>
                                         </Card>
                             ))}
-                        {/* <Carousel className="w-full">
-                        <CarouselContent>
-                            {data.projects.map((project) => (
-                                <CarouselItem>
-                                    <div className="p-1">
-                                        <Card className="min-h-[20rem] w-full min-w-[20rem]">
-                                            <CardHeader className="relative flex h-[10rem] flex-col justify-end rounded-t-lg p-3">
-                                                <img
-                                                    src={
-                                                        '/src/assets/' +
-                                                        project.background_img
-                                                    }
-                                                    className="absolute left-0 top-0 z-0 h-full w-full rounded-t-lg object-cover"
-                                                />
-                                                <CardTitle className="z-10 text-secondary">
-                                                    {project.title}
-                                                </CardTitle>
-                                            </CardHeader>
-                                            <CardContent className="text-ellipsis px-4 py-4">
-                                                {project.content}
-                                            </CardContent>
-                                        </Card>
-                                    </div>
-                                </CarouselItem>
-                            ))}
-                        </CarouselContent>
-                    </Carousel> */}
                     </div>
                 </div>
                 <div className="relative top-[-5rem]" id="team"></div>
@@ -146,9 +119,9 @@ function MobilePage() {
                         </div>
                         <div className="mt-2 h-2 w-12 bg-accent"></div>
                     </div>
-                    <div className="grid grid-cols-2 grid-rows-5 justify-items-center my-8">
-                        {data.team.map((member) => (
-                            <Card className="relative h-[16em] w-[11em] m-1 rounded-xl border-none">
+                    <div className="grid grid-cols-2 grid-rows-5 gap-x-4 gap-y-2 justify-items-center my-8">
+                        {data.team.map((member, index) => (
+                            <Card className="relative h-[16em] w-[11em] rounded-xl border-none" key={index}>
                                 <img
                                     src={'/src/assets/' + member.img}
                                     alt="person face"
@@ -175,7 +148,7 @@ function MobilePage() {
                     <Accordion type="single" collapsible className="w-full">
                         {
                             data.publications.map((pub, index) => (
-                                <AccordionItem value={'item-' + index}>
+                                <AccordionItem value={'item-' + index} key={index}>
                                     <AccordionTrigger>
                                         {pub.title}
                                     </AccordionTrigger>

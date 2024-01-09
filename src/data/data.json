@@ -161,7 +161,8 @@
         }
     ],
     "news": {
-        "carousel": [],
+        "carousel": [
+        ],
         "empty": "No news yet."
     },
     "contact": {
