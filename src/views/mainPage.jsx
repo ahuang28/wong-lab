@@ -118,16 +118,15 @@ function MainPage() {
                     </div>
                 </div>
                 <div className="relative top-[-5rem]" id="team"></div>
-                <div className="h-[40rem] bg-secondary stroke-black">
-                    <div className="absolute h-[36rem] w-[29rem] rounded-xl bg-primary px-10 py-20">
-                        <div className="text-5xl font-bold text-secondary">
+                <div className='h-[40rem] w-full flex flex-row gap-[2rem] bg-secondary pl-[5rem]'>
+                    <div className='h-[36rem] w-[29rem] rounded-xl bg-primary px-10 py-20'>
+                        <div className='text-5xl font-bold text-secondary'>
                             Meet the<br></br>Team
                         </div>
                         <div className="mb-6 mt-2 h-2 w-12 bg-accent"></div>
                     </div>
-                    <div className="no-scrollbar flex w-full overflow-x-scroll pt-10">
-                        <div className="relative flex h-[36rem] flex-nowrap items-center justify-center gap-[2rem] 2xl:left-[30%]">
-            
+                    <div className='no-scrollbar flex w-full overflow-x-scroll pt-10'>
+                        <div className='relative flex h-[36rem] flex-nowrap items-center justify-center gap-[2rem]'>
                             {data.team.map((member) => (
                                 <Card className="relative h-[24em] w-[16em] rounded-xl border-none">
                                     <img
@@ -145,7 +144,7 @@ function MainPage() {
                                 </Card>
                             ))}
                         </div>
-                    </div>
+                    </div>           
                 </div>
                 <div className="relative top-[-5rem]" id="publications"></div>
                 <div className="flex h-[38rem] flex-col items-center bg-secondary pt-16">
