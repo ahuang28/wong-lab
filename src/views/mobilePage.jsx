@@ -247,10 +247,10 @@ function MobilePage() {
                     </div>
                 </div>
                 <div className="relative flex items-center gap-20 bg-primary px-10 py-2">
-                    <div className="text-secondary">{ data.footer.copyright }</div>
-                    <div className="text-secondary">{ data.footer.mcgill }</div>
-                    <div className="text-secondary">{ data.footer.douglas }</div>
-                    <div className="text-secondary">
+                    <div className="text-secondary text-xs">{ data.footer.copyright }</div>
+                    <div className="text-secondary text-xs">{ data.footer.mcgill }</div>
+                    <div className="text-secondary text-xs">{ data.footer.douglas }</div>
+                    <div className="text-secondary text-xs">
                         { data.footer.design }
                     </div>
                 </div>
